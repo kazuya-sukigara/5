@@ -16,4 +16,9 @@ class BooksControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get edit" do
+    get books_mailler_url
+    assert_response :success
+  end
+
 end
