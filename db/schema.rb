@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_21_110423) do
+ActiveRecord::Schema.define(version: 2020_08_07_051321) do
 
   create_table "article_tag_relations", force: :cascade do |t|
     t.integer "article_id"
@@ -135,6 +135,11 @@ ActiveRecord::Schema.define(version: 2020_07_21_110423) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "introduction"
+    t.integer "postcode"
+    t.integer "prefecture_code"
+    t.string "address_city"
+    t.string "address_street"
+    t.string "address_building"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
