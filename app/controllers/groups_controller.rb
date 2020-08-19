@@ -1,7 +1,7 @@
 class GroupsController < ApplicationController
 	before_action :set_group, only: [:edit, :update]
 
-	def index # ここを追加
+	def index 
     end
 
 	def new
@@ -31,7 +31,7 @@ class GroupsController < ApplicationController
 	 params.require(:group).permit(:name, user_ids: [] )
 	end
 
-	def set_group # ここ3
+	def set_group 
     @group = Group.find(params[:id])
     end
 end
