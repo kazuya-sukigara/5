@@ -30,6 +30,16 @@
 
             </a></th>
           </tr>
+
+           <tr>
+         	<th>followers</th>
+         	<th><a href="<%= followers_user_path(user) %>">
+            <strong id="followers" class="stat">
+            <%= user.followers.count %>
+            </strong>
+
+            </a></th>
+          </tr>
 </table>
 
 <div class="row">
